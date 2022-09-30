@@ -1,0 +1,296 @@
+:root {
+  --color-white-100: hsl(206, 5%, 98%);
+  --color-white-500: hsl(206, 5%, 50%);
+  --color-black-100: hsl(213, 23%, 8%);
+  --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+  height: auto;
+  z-index: 100;
+  margin: 0 auto;
+}
+.navbar {
+  margin: auto 0;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 75%;
+    height: 100%;
+    z-index: 10;
+    opacity: 0;
+    overflow-y: auto;
+    visibility: hidden;
+    -webkit-box-shadow: var(--shadow-medium);
+    box-shadow: var(--shadow-medium);
+    background-color: var(--color-white-100);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .navbar.active {
+    left: 0rem;
+    opacity: 1;
+    visibility: visible;
+  }
+  .submenu-item {
+    border-bottom: 1px solid #dddd;
+  }
+}
+
+.menu-item {
+  position: relative;
+  display: inline-block;
+  margin-left: 1.1rem;
+}
+.menu-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-column-gap: 0.25rem;
+  -moz-column-gap: 0.25rem;
+  column-gap: 0.25rem;
+  font-size: .8rem;
+  font-weight: 700;
+  line-height: inherit;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: var(--color-black-100);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding-bottom: 8px;
+}
+.menu-link:hover {
+  background: linear-gradient(135deg, #3eed8b 0%, #0a9949 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.menu-link > i.bx {
+  font-size: 1.35rem;
+  line-height: 1.5;
+  color: inherit;
+}
+@media only screen and (min-width: 993px) {
+  .menu-dropdown:hover > .submenu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@media only screen and (max-width: 992px) {
+  .menu {
+    width: 100%;
+    height: auto;
+    padding: 1rem 1rem;
+  }
+  .menu-item {
+    display: block;
+    margin: 0 auto;
+  }
+  .menu-link {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    font-size: 14px;
+    border-bottom: 1px solid #dddd;
+  }
+  .menu-item > button {
+    width: 100%;
+  }
+}
+
+.submenu {
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  min-width: 13rem;
+  height: auto;
+  padding: 0 1rem 1rem;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(1rem);
+  transform: translateY(1rem);
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: var(--shadow-medium);
+  box-shadow: var(--shadow-medium);
+  background-color: var(--color-white-100);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 9999;
+}
+.submenu-item {
+  display: block;
+  margin-top: 0.75rem;
+  padding-bottom: 8px;
+}
+.submenu-link {
+  font-size: .8rem;
+  font-weight: 700;
+  line-height: inherit;
+  cursor: pointer;
+  color: #252525;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  padding-bottom: 8px;
+}
+.submenu-link:hover {
+  background: linear-gradient(135deg, #3eed8b 0%, #0a9949 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+@media only screen and (max-width: 992px) {
+  .submenu {
+    position: relative;
+    top: -0.5rem;
+    left: 2.5rem;
+    width: 100%;
+    max-height: 0;
+    padding: 0px;
+    border: none;
+    outline: none;
+    opacity: 1;
+    overflow: hidden;
+    visibility: visible;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: transparent;
+  }
+  .menu-search {
+    display: none;
+  }
+}
+
+.burger {
+  position: relative;
+  display: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 1.75rem;
+  height: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  background: transparent;
+}
+.burger-line {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  opacity: 1;
+  border: none;
+  outline: none;
+  background: #252525;
+}
+.burger-line:nth-child(1) {
+  top: 0px;
+}
+.burger-line:nth-child(2) {
+  top: 0.5rem;
+}
+.burger-line:nth-child(3) {
+  top: 1rem;
+}
+@media only screen and (max-width: 992px) {
+  .burger {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    margin: auto 0;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+@media only screen and (max-width: 992px) {
+  .overlay.active {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.menu-link {
+  position: relative;
+}
+
+.menu-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  bottom: -2%;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+
+  background: linear-gradient(135deg, #3eed8b 0%, #0a9949 100%);
+}
+
+.menu-link:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.submenu-link {
+  position: relative;
+}
+
+.submenu-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #3eed8b 0%, #0a9949 100%);
+  bottom: -2%;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.submenu-link:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.scrolled {
+  background: #fff;
+  box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease;
+}

@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./js/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./build/tailwind.css">
+    <link rel="stylesheet" href="./css/menu.css">
+
+</head>
+
+<body>
+    <div class="max-w-[1920px]">
+        <nav class="sticky" id="nav-head">
+            <div class="layout-container">
+                <div class="header py-3 flex items-center justify-between" id="header">
+                    <div>
+                        <a href="#!">
+                            <img src="./img/Logo-1.png" alt="" class="w-[143px]">
+                        </a>
+                    </div>
+                    <div class="burger" id="burger">
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                    </div>
+                    <span class="overlay"></span>
+                    <div class="navbar" id="navbar">
+                        <ul class="menu" id="menu">
+                            <li class="menu-item"><a href="#" class="menu-link">Giới thiệu</a></li>
+                            <li class="menu-item menu-dropdown">
+                                <span class="menu-link" data-toggle="submenu">Đối tượng khách hàng
+                                    <i class="fa-solid fa-caret-down"></i>
+                                </span>
+                                <ul class="submenu">
+                                    <li class="submenu-item"><a href="#" class="submenu-link">Giới thiệu</a></li>
+                                    <li class="submenu-item"><a href="#" class="submenu-link">Đội ngũ bác sĩ</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item"><a href="#" class="menu-link">Quy trình</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Bảng giá</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Cảm nhận của khách hàng</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Đội ngũ bác sĩ</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Hình ảnh & Video</a></li>
+                            <li class="menu-item">
+                                <button
+                                    class="bg-orange-color rounded-[20px] px-2 py-[3px] flex items-center text-[#fff] box">
+                                    <img src="./img/Phone, Call.png" alt="" class="bg-[#fff] rounded-full p-1 w-[25px]">
+                                    <a href="#!" class="px-2 py-1 text-[11px]"> Gọi 1900 1806</a>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="relative">
+            <div class="layout-container flex items-center lg:gap-x-8 pt-20 pb-[30px] lg:pb-[120px]">
+                <div class="text-[#fff] lg:text-[#252525] w-full py-8 lg:pt-[115px] lg:pb-[145px] lg:basis-1/2">
+                    <h3 class="text-[30px] leading-[50px] lg:text-[50px] lg:leading-[70px] font-bold pb-[0.5rem]">Hãy để
+                        đôi mắt là cửa sổ của tâm hồn
+                    </h3>
+                    <p class="text-[.8rem] leading-[1rem] pb-0 lg:pb-[2.4rem] max-w-[503px]">Ortho-K (Orthokeratology -
+                        tạo hình
+                        giác mạc) là phương pháp sử dụng kính
+                        áp
+                        tròng cứng được thiết kế
+                        đặc biệt với mỗi người để định hình tạm thời giác mạc và cải thiện thị lực. Kính Ortho-K thường
+                        đeo
+                        vào ban đêm để định hình lại bề mặt trước của mắt.</p>
+                    <p class=" text-[0.925rem] leading-[2.55rem] font-bold text-justify pb-[0.4rem]">Siêu khuyến mãi <b
+                            class="bg-bg-gradiant bg-clip-text text-transparent text-[1.75rem] text-justify">tháng
+                            8</b>, giảm
+                        ngay <b class="bg-bg-gradiant bg-clip-text text-transparent text-[1.75rem] text-justify">30%</b>
+                        khi
+                        đăng
+                        ký tại đây!</p>
+                    <div
+                        class="flex items-center rounded-[40px] border-[#50C577] w-full  border py-[7px] pr-2 pl-6 relative">
+                        <div class="flex-1 w-full">
+                            <input type="text" placeholder="Nhập số điện thoại..." class="flex-1">
+                        </div>
+                        <button
+                            class="bg-gra-input flex items-center text-base font-bold text-[#ffff] px-[15px] py-[4px] rounded-[23px] shadow-input">
+                            <img src="./img/send.png" alt="" class="pr-2 w-[15px] lg:w-auto">
+                            <a href="#!" class="text-[8px] lg:text-[.8rem]">GỬI THÔNG TIN</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="">
+                </div>
+            </div>
+            <img src="./img/head.png" alt="" class="w-full lg:w-[46%] absolute top-0 right-0 z-[-1] h-auto">
+            <img src="./img/vec.png" alt="" class="absolute top-[12.8%] left-[0.5%] w-[2.4%]">
+            <img src="./img/vec-3.png" alt="" class="absolute bottom-[7.2%] right-[37.3%] z-[-10] w-[14.6%]">
+        </div>
+        <div class="layout-container pb-[30px] lg:pb-[147px] relative">
+            <div class="grid grip-cols-1 lg:grid-cols-2 pb-[2.4rem]">
+                <div class="pb-2 lg:pb-0 text-[31.5px] lg:text-[32px] leading-[33.6px] max-w-[500px] font-bold w-full">
+                    <h3>Tầm quan trọng của việc sử dụng kính Ortho-K</h3>
+                </div>
+                <div class="text-[.8rem] text-justify">
+                    <p class="pb-[0.55rem]">
+                        Kính Ortho-K là phương pháp sử dụng kính áp tròng cứng được thiết kế đặc biệt với mỗi người để
+                        định hình tạm thời giác mạc và cải thiện thị lực. Kính Ortho-K thường đeo vào ban đêm để định
+                        hình lại bề mặt trước của mắt. Mà không đem tới bất kỳ tổn thương nào cho mắt.
+                    </p>
+                    <p class="pb-6">
+                        Nhiều nghiên cứu lâm sàng cho thấy kính Ortho K mang lại hiệu quả trong việc giảm tiến triển tật
+                        khúc xạ khoảng 50% ở trẻ và thậm chí một số trẻ có kết quả tốt hơn. Ngoài ra, kính Ortho-K có
+                        những ưu điểm sau:
+                    </p>
+                    <button
+                        class="bg-orange-color text-[#fff] flex items-center pl-[1.1rem] pr-[1.4rem] py-[0.35rem] rounded-[23px]">
+                        <img src="./img/Group.png" alt="" class="pr-2">
+                        ĐĂNG KÝ TƯ VẤN
+                    </button>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-8 lg:grid-cols-3 lg:gap-y-[2.2rem] lg:gap-x-[7.2rem]">
+                <div class="">
+                    <img class="w-[70px]" src="./img/icon-5.png" alt="">
+                    <p class="text-[0.95rem] leading-7 font-bold text-justify pt-[1rem] ">Phục hồi thị lực</p>
+                    <p class="text-[0.8rem] leading-[1.1rem] text-justify">Điều chỉnh độ cận, viễn và thậm chí loạn thị
+                        từ nhẹ đến nặng giúp
+                        thị lực phục hồi vào ban ngày</p>
+                </div>
+                <div class="">
+                    <img class="w-[70px]" src="./img/icon-6.png" alt="">
+                    <p class="text-[0.95rem] leading-7 font-bold text-justify pt-[1rem] ">Phục hồi thị lực</p>
+                    <p class="text-[0.8rem] leading-[1.1rem] text-justify">Điều chỉnh độ cận, viễn và thậm chí loạn thị
+                        từ nhẹ đến nặng giúp
+                        thị lực phục hồi vào ban ngày</p>
+                </div>
+                <div class="">
+                    <img class="w-[70px]" src="./img/icon-7.png" alt="">
+                    <p class="text-[0.95rem] leading-7 font-bold text-justify pt-[1rem] ">Phục hồi thị lực</p>
+                    <p class="text-[0.8rem] leading-[1.1rem] text-justify">Điều chỉnh độ cận, viễn và thậm chí loạn thị
+                        từ nhẹ đến nặng giúp
+                        thị lực phục hồi vào ban ngày</p>
+                </div>
+                <div class="">
+                    <img class="w-[70px]" src="./img/icon-8.png" alt="">
+                    <p class="text-[0.95rem] leading-7 font-bold text-justify pt-[1rem] ">Phục hồi thị lực</p>
+                    <p class="text-[0.8rem] leading-[1.1rem] text-justify">Điều chỉnh độ cận, viễn và thậm chí loạn thị
+                        từ nhẹ đến nặng giúp
+                        thị lực phục hồi vào ban ngày</p>
+                </div>
+                <div class="">
+                    <img class="w-[70px]" src="./img/icon-9.png" alt="">
+                    <p class="text-[0.95rem] leading-7 font-bold text-justify pt-[1rem] ">Phục hồi thị lực</p>
+                    <p class="text-[0.8rem] leading-[1.1rem] text-justify">Điều chỉnh độ cận, viễn và thậm chí loạn thị
+                        từ nhẹ đến nặng giúp
+                        thị lực phục hồi vào ban ngày</p>
+                </div>
+                <div class="">
+                    <img class="w-[70px]" src="./img/icon-10.png" alt="">
+                    <p class="text-[0.95rem] leading-7 font-bold text-justify pt-[1rem] ">Phục hồi thị lực</p>
+                    <p class="text-[0.8rem] leading-[1.1rem] text-justify">Điều chỉnh độ cận, viễn và thậm chí loạn thị
+                        từ nhẹ đến nặng giúp
+                        thị lực phục hồi vào ban ngày</p>
+                </div>
+            </div>
+            <img src="./img/banner-bt.png" alt="" class="absolute top-[-21%] left-0 w-full lg:w-[79%] z-[-1]">
+            <img src="./img/circel.png" alt="" class="absolute bottom-0 left-[59.3%] w-[3.8%]">
+            <img src="./img/Union.png" alt="" class="absolute top-[21.1%] right-[1.9%] w-[2%]">
+        </div>
+        <div class="bg-swing-img bg-no-repeat pb-[30px] lg:pb-[92px] bg-center z-[-1]">
+            <div class="layout-container">
+                <div class="flex justify-between">
+                    <div>
+                        <h3 class="text-[26.1px] lg:text-[31.9px] leading-[51px] font-bold pb-[0.3rem]">Ai nên sử dụng
+                            kính Ortho-K?</h3>
+                        <p class="text-[0.8rem] leading-[1.2rem] font-normal text-justify pb-[2rem] max-w-[54%]">Ortho-K
+                            là phương pháp kiểm
+                            soát tật khúc xạ
+                            tối ưu,an toàn nhất hiện nay dành cho người lớn và trẻ em
+                            mà không cần phẫu thuật. Đối tượng có thể sử dụng kính Ortho K bao gồm:</p>
+                    </div>
+                    <div class="relative">
+                        <div class="swiper-next-button">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <div class="swiper-prev-button">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-my mySwiper">
+                    <div class="swiper-wrapper text-[#fff]">
+                        <div class="swiper-slide">
+                            <div
+                                class="bg-bg-gradiant p-2 rounded-[10px] rounded-tl-[50px] rounded-br-[50px] text-white">
+                                <img src="./img/image01.png" alt="" class="rounded-[10px] rounded-tl-[50px]">
+                                <h5 class="text-[1.05rem] leading-7 text-left font-semibold pt-5 pb-2">Người bị cận thị
+                                </h5>
+                                <p class="text-left text-[0.8rem] leading-[.9rem] font-normal pb-[1.1rem]">Người bị cận
+                                    thị (dưới 10 độ) không kèm
+                                    hoặc kèm loạn thị</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide lg:pt-[90px]">
+                            <div
+                                class="bg-bg-gradiant p-2 rounded-[10px] rounded-tl-[50px] rounded-br-[50px] text-white">
+                                <img src="./img/image01.png" alt="" class="rounded-[10px] rounded-tl-[50px]">
+                                <h5 class="text-[1.05rem] leading-7 text-left font-semibold pt-5 pb-2">Trẻ em dưới 18
+                                    tuổi</h5>
+                                <p class="text-left text-[0.8rem] leading-[.9rem] font-normal pb-[1.1rem]">Trẻ em dưới
+                                    18 tuổi chưa đủ độ tuổi để
+                                    phẫu thuật phẫu thuật</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="bg-bg-gradiant p-2 rounded-[10px] rounded-tl-[50px] rounded-br-[50px] text-white">
+                                <img src="./img/image01.png" alt="" class="rounded-[10px] rounded-tl-[50px]">
+                                <h5 class="text-[1.05rem] leading-7 text-left font-semibold pt-5 pb-2">Chưa có tiền sử
+                                    phẫu thuật</h5>
+                                <p class="text-left text-[0.8rem] leading-[.9rem] font-normal pb-[1.1rem]">Người chưa có
+                                    tiền sử phẫu thuật cận thị
+                                    hoặc các loại phẫu thuật mắt khác</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide lg:pt-[90px]">
+                            <div
+                                class="bg-bg-gradiant p-2 rounded-[10px] rounded-tl-[50px] rounded-br-[50px] text-white">
+                                <img src="./img/image01.png" alt="" class="rounded-[10px] rounded-tl-[50px]">
+                                <h5 class="text-[1.05rem] leading-7 text-left font-semibold pt-5 pb-2">Người không có
+                                    các bệnh lý </h5>
+                                <p class="text-left text-[0.8rem] leading-[.9rem] font-normal pb-[1.1rem]">Người chưa có
+                                    tiền sử phẫu thuật cận thị
+                                    hoặc các loại phẫu thuật mắt khác</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="bg-bg-gradiant p-2 rounded-[10px] rounded-tl-[50px] rounded-br-[50px] text-white">
+                                <img src="./img/image01.png" alt="" class="rounded-[10px] rounded-tl-[50px]">
+                                <h5 class="text-[1.05rem] leading-7 text-left font-semibold pt-5 pb-2">Chưa có tiền sử
+                                    phẫu thuật</h5>
+                                <p class="text-left text-[0.8rem] leading-[.9rem] font-normal pb-[1.1rem]">Người chưa có
+                                    tiền sử phẫu thuật cận thị
+                                    hoặc các loại phẫu thuật mắt khác</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide lg:pt-[90px]">
+                            <div
+                                class="bg-bg-gradiant p-2 rounded-[10px] rounded-tl-[50px] rounded-br-[50px] text-white">
+                                <img src="./img/image01.png" alt="" class="rounded-[10px] rounded-tl-[50px]">
+                                <h5 class="text-[1.05rem] leading-7 text-left font-semibold pt-5 pb-2">Chưa có tiền sử
+                                    phẫu thuật</h5>
+                                <p class="text-left text-[0.8rem] leading-[.9rem] font-normal pb-[1.1rem]">Người chưa có
+                                    tiền sử phẫu thuật cận thị
+                                    hoặc các loại phẫu thuật mắt khác</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative">
+            <div class="layout-container pb-[30px] lg:pb-[155px]">
+                <div class="lg:flex gap-x-8">
+                    <div class="w-full lg:w-[calc(100%_-_50%)]">
+                        <h3
+                            class="text-[22.7px] lg:text-[33.7px] leading-[40.1px] pt-0 lg:pt-[93px] font-bold pb-[1.3rem]">
+                            Tại sao nên chọn gói
+                            Ortho-K tại Bệnh viện
+                            Đa
+                            khoa Phương Đông?</h3>
+                        <p class="text-[0.8rem] leading-[0.9rem] font-normal text-justify pb-10 max-w-[93%]">Hiện nay,
+                            tại Bệnh viện Đa khoa Phương Đông
+                            đáp
+                            ứng đầy đủ từ đội ngũ bác sĩ có trình độ chuyên
+                            môn cao, cơ sở vật chất, trang thiết bị kỹ thuật hiện đại giúp quá trình thăm khám và điều
+                            trị
+                            các bệnh về tật khúc xạ an toàn, chính xác. Khi đăng ký sử dụng gói kính Ortho - K tại bệnh
+                            viện
+                            Phương Đông, khách hàng được trải nghiệm dịch vụ y tế chất lượng cao cùng với các ưu điểm
+                            vượt
+                            trội sau</p>
+                        <div class="grid-cols-2 grid gap-8">
+                            <div class="box-wh">
+                                <img src="./img/icon-1.png" alt="" class="m-auto w-[48px] pb-3">
+                                <h3 class="text-[0.8rem] leading-[1rem] pb-[.5rem] font-bold">Đội ngũ bác sĩ giàu kinh
+                                    nghiệm</h3>
+                                <p class="text-[.8rem] leading-[1rem] font-normal">Hiện nay, tại Bệnh viện Đa khoa
+                                    Phương Đông đáp ứng đầy
+                                    đủ
+                                    từ đội ngũ bác sĩ.</p>
+                            </div>
+                            <div class="box-wh">
+                                <img src="./img/icon-1.png" alt="" class="m-auto w-[48px] pb-3">
+                                <h3 class="text-[0.8rem] leading-[1rem] pb-[.5rem] font-bold">Đội ngũ bác sĩ giàu kinh
+                                    nghiệm</h3>
+                                <p class="text-[.8rem] leading-[1rem] font-normal">Hiện nay, tại Bệnh viện Đa khoa
+                                    Phương Đông đáp ứng đầy
+                                    đủ
+                                    từ đội ngũ bác sĩ.</p>
+                            </div>
+                            <div class="box-wh">
+                                <img src="./img/icon-1.png" alt="" class="m-auto w-[48px] pb-3">
+                                <h3 class="text-[0.8rem] leading-[1rem] pb-[.5rem] font-bold">Đội ngũ bác sĩ giàu kinh
+                                    nghiệm</h3>
+                                <p class="text-[.8rem] leading-[1rem] font-normal">Hiện nay, tại Bệnh viện Đa khoa
+                                    Phương Đông đáp ứng đầy
+                                    đủ
+                                    từ đội ngũ bác sĩ.</p>
+                            </div>
+                            <div class="box-wh">
+                                <img src="./img/icon-1.png" alt="" class="m-auto w-[48px] pb-3">
+                                <h3 class="text-[0.8rem] leading-[1rem] pb-[.5rem] font-bold">Đội ngũ bác sĩ giàu kinh
+                                    nghiệm</h3>
+                                <p class="text-[.8rem] leading-[1rem] font-normal">Hiện nay, tại Bệnh viện Đa khoa
+                                    Phương Đông đáp ứng đầy
+                                    đủ
+                                    từ đội ngũ bác sĩ.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                    </div>
+                    <a href="#!"> <img src="./img/Mask.png" alt=""
+                            class="lg:absolute top-0 right-0 w-full pt-2 lg:pt-0 lg:w-[46%] z-[-1] h-auto"></a>
+                </div>
+            </div>
+        </div>
+        <div class="layout-container pb-[30px] lg:pb-[110px]">
+            <h3 class="font-bold text-[28px] lg:text-[33.6px] leading-[48px] text-center pb-[1.875rem]">Đội ngũ bác sĩ
+                của chúng tôi
+            </h3>
+            <div class="swiper-team TeamSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div
+                            class="bg-[#ffff] rounded-tl-[5rem] shadow-md rounded-b-[0.9375rem] rounded-tr-[0.9375rem]">
+                            <a href="#!">
+                                <img src="./img/Rectangle.png" alt="" class="pb-[1rem]">
+                            </a>
+                            <div class="text-center">
+                                <h3 class="text-[1rem] leading-[1.75rem] font-bold pb-[.5rem]">NGUYỄN TRUNG CHÍNH</h3>
+                                <p class="text-[#0A9949] text-[.775rem] leading-5 font-normal pb-[1.05rem]">PGS.TS. Bác
+                                    sĩ Ung bướu</p>
+                                <div class="text-[.9rem] flex items-center text-[#FFB800] m-auto justify-center">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="text-[#888888] text-xs font-normal pb-[1.1rem]">4.8/5 (38 bình chọn)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="bg-[#ffff] rounded-tl-[5rem] shadow-md rounded-b-[0.9375rem] rounded-tr-[0.9375rem]">
+                            <a href="#!">
+                                <img src="./img/Rectangle.png" alt="" class="pb-[1rem]">
+                            </a>
+                            <div class="text-center">
+                                <h3 class="text-[1rem] leading-[1.75rem] font-bold pb-[.5rem]">NGUYỄN TRUNG CHÍNH</h3>
+                                <p class="text-[#0A9949] text-[.775rem] leading-5 font-normal pb-[1.05rem]">PGS.TS. Bác
+                                    sĩ Ung bướu</p>
+                                <div class="text-[.9rem] flex items-center text-[#FFB800] m-auto justify-center">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="text-[#888888] text-xs font-normal pb-[1.1rem]">4.8/5 (38 bình chọn)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="bg-[#ffff] rounded-tl-[5rem] shadow-md rounded-b-[0.9375rem] rounded-tr-[0.9375rem]">
+                            <a href="#!">
+                                <img src="./img/Rectangle.png" alt="" class="pb-[1rem]">
+                            </a>
+                            <div class="text-center">
+                                <h3 class="text-[1rem] leading-[1.75rem] font-bold pb-[.5rem]">NGUYỄN TRUNG CHÍNH</h3>
+                                <p class="text-[#0A9949] text-[.775rem] leading-5 font-normal pb-[1.05rem]">PGS.TS. Bác
+                                    sĩ Ung bướu</p>
+                                <div class="text-[.9rem] flex items-center text-[#FFB800] m-auto justify-center">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="text-[#888888] text-xs font-normal pb-[1.1rem]">4.8/5 (38 bình chọn)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="bg-[#ffff] rounded-tl-[5rem] shadow-md rounded-b-[0.9375rem] rounded-tr-[0.9375rem]">
+                            <a href="#!">
+                                <img src="./img/Rectangle.png" alt="" class="pb-[1rem]">
+                            </a>
+                            <div class="text-center">
+                                <h3 class="text-[1rem] leading-[1.75rem] font-bold pb-[.5rem]">NGUYỄN TRUNG CHÍNH</h3>
+                                <p class="text-[#0A9949] text-[.775rem] leading-5 font-normal pb-[1.05rem]">PGS.TS. Bác
+                                    sĩ Ung bướu</p>
+                                <div class="text-[.9rem] flex items-center text-[#FFB800] m-auto justify-center">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="text-[#888888] text-xs font-normal pb-[1.1rem]">4.8/5 (38 bình chọn)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="bg-[#ffff] rounded-tl-[5rem] shadow-md rounded-b-[0.9375rem] rounded-tr-[0.9375rem]">
+                            <a href="#!">
+                                <img src="./img/Rectangle.png" alt="" class="pb-[1rem]">
+                            </a>
+                            <div class="text-center">
+                                <h3 class="text-[1rem] leading-[1.75rem] font-bold pb-[.5rem]">NGUYỄN TRUNG CHÍNH</h3>
+                                <p class="text-[#0A9949] text-[.775rem] leading-5 font-normal pb-[1.05rem]">PGS.TS. Bác
+                                    sĩ Ung bướu</p>
+                                <div class="text-[.9rem] flex items-center text-[#FFB800] m-auto justify-center">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="text-[#888888] text-xs font-normal pb-[1.1rem]">4.8/5 (38 bình chọn)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="swiper-prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="py-[30px] lg:pt-[100px] lg:pb-[140px] relative">
+            <div class="layout-container">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h3
+                            class="text-[29px] lg:text-[31px] leading-[29.3px] lg:max-w-[70%] font-bold pb-10 lg:text-[#fff]">
+                            Cảm nhận của
+                            khách hàng sau
+                            khi sử dụng dịch vụ</h3>
+                    </div>
+                    <div class="hidden lg:block relative">
+                        <div class="swiper-next-button">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <div class="swiper-prev-button">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-fy fSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="rounded-b-[15px] bg-[#fff] rounded-t-2xl shadow-md">
+                                <div class="card_background_img"></div>
+                                <div class="card_profile_img"></div>
+                                <div class="pb-[.8rem]">
+                                    <p class="text-[.925rem] leading-[1.75rem] font-bold">Nguyễn Minh Ánh</p>
+                                    <div class="flex items-center text-[#FFB800] m-auto justify-center text-[9px]">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="px-[1.95rem] pb-[1.2rem]">
+                                    <h3 class="text-[.8rem] leading-[1.2rem] font-semibold">Bệnh viện Phương Đông mang
+                                        đến cho tôi
+                                        cảm
+                                        giác
+                                        vô cùng bình yên và an tâm khi thăm khám
+                                        tại đây!</h3>
+                                    <p class="text-[#454545] text-[.7rem] leading-[.95rem] font-normal">Lorem ipsum
+                                        dolor sit amet,
+                                        consectetur
+                                        adipiscing elit. Velit nulla etiam sed consequat
+                                        dictumst viverra molestie tortor feugiat. Purus consequat, sapien diam nec.
+                                        Egestas
+                                        lacinia scelerisque ultrices vivamus adipiscing diam massa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="rounded-b-[15px] bg-[#fff] rounded-t-2xl shadow-md">
+                                <div class="card_background_img"></div>
+                                <div class="card_profile_img"></div>
+                                <div class="pb-[.8rem]">
+                                    <p class="text-[.925rem] leading-[1.75rem] font-bold">Nguyễn Minh Ánh</p>
+                                    <div class="flex items-center text-[#FFB800] m-auto justify-center text-[9px]">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="px-[1.95rem] pb-[1.2rem]">
+                                    <h3 class="text-[.8rem] leading-[1.2rem] font-semibold">Bệnh viện Phương Đông mang
+                                        đến cho tôi
+                                        cảm
+                                        giác
+                                        vô cùng bình yên và an tâm khi thăm khám
+                                        tại đây!</h3>
+                                    <p class="text-[#454545] text-[.7rem] leading-[.95rem] font-normal">Lorem ipsum
+                                        dolor sit amet,
+                                        consectetur
+                                        adipiscing elit. Velit nulla etiam sed consequat
+                                        dictumst viverra molestie tortor feugiat. Purus consequat, sapien diam nec.
+                                        Egestas
+                                        lacinia scelerisque ultrices vivamus adipiscing diam massa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="rounded-b-[15px] bg-[#fff] rounded-t-2xl shadow-md">
+                                <div class="card_background_img"></div>
+                                <div class="card_profile_img"></div>
+                                <div class="pb-[.8rem]">
+                                    <p class="text-[.925rem] leading-[1.75rem] font-bold">Nguyễn Minh Ánh</p>
+                                    <div class="flex items-center text-[#FFB800] m-auto justify-center text-[9px]">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="px-[1.95rem] pb-[1.2rem]">
+                                    <h3 class="text-[.8rem] leading-[1.2rem] font-semibold">Bệnh viện Phương Đông mang
+                                        đến cho tôi
+                                        cảm
+                                        giác
+                                        vô cùng bình yên và an tâm khi thăm khám
+                                        tại đây!</h3>
+                                    <p class="text-[#454545] text-[.7rem] leading-[.95rem] font-normal">Lorem ipsum
+                                        dolor sit amet,
+                                        consectetur
+                                        adipiscing elit. Velit nulla etiam sed consequat
+                                        dictumst viverra molestie tortor feugiat. Purus consequat, sapien diam nec.
+                                        Egestas
+                                        lacinia scelerisque ultrices vivamus adipiscing diam massa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="rounded-b-[15px] bg-[#fff] rounded-t-2xl shadow-md">
+                                <div class="card_background_img"></div>
+                                <div class="card_profile_img"></div>
+                                <div class="pb-[.8rem]">
+                                    <p class="text-[.925rem] leading-[1.75rem] font-bold">Nguyễn Minh Ánh</p>
+                                    <div class="flex items-center text-[#FFB800] m-auto justify-center text-[9px]">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="px-[1.95rem] pb-[1.2rem]">
+                                    <h3 class="text-[.8rem] leading-[1.2rem] font-semibold">Bệnh viện Phương Đông mang
+                                        đến cho tôi
+                                        cảm
+                                        giác
+                                        vô cùng bình yên và an tâm khi thăm khám
+                                        tại đây!</h3>
+                                    <p class="text-[#454545] text-[.7rem] leading-[.95rem] font-normal">Lorem ipsum
+                                        dolor sit amet,
+                                        consectetur
+                                        adipiscing elit. Velit nulla etiam sed consequat
+                                        dictumst viverra molestie tortor feugiat. Purus consequat, sapien diam nec.
+                                        Egestas
+                                        lacinia scelerisque ultrices vivamus adipiscing diam massa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="rounded-b-[15px] bg-[#fff] rounded-t-2xl shadow-md">
+                                <div class="card_background_img"></div>
+                                <div class="card_profile_img"></div>
+                                <div class="pb-[.8rem]">
+                                    <p class="text-[.925rem] leading-[1.75rem] font-bold">Nguyễn Minh Ánh</p>
+                                    <div class="flex items-center text-[#FFB800] m-auto justify-center text-[9px]">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="px-[1.95rem] pb-[1.2rem]">
+                                    <h3 class="text-[.8rem] leading-[1.2rem] font-semibold">Bệnh viện Phương Đông mang
+                                        đến cho tôi
+                                        cảm
+                                        giác
+                                        vô cùng bình yên và an tâm khi thăm khám
+                                        tại đây!</h3>
+                                    <p class="text-[#454545] text-[.7rem] leading-[.95rem] font-normal">Lorem ipsum
+                                        dolor sit amet,
+                                        consectetur
+                                        adipiscing elit. Velit nulla etiam sed consequat
+                                        dictumst viverra molestie tortor feugiat. Purus consequat, sapien diam nec.
+                                        Egestas
+                                        lacinia scelerisque ultrices vivamus adipiscing diam massa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="rounded-b-[15px] bg-[#fff] rounded-t-2xl shadow-md">
+                                <div class="card_background_img"></div>
+                                <div class="card_profile_img"></div>
+                                <div class="pb-[.8rem]">
+                                    <p class="text-[.925rem] leading-[1.75rem] font-bold">Nguyễn Minh Ánh</p>
+                                    <div class="flex items-center text-[#FFB800] m-auto justify-center text-[9px]">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="px-[1.95rem] pb-[1.2rem]">
+                                    <h3 class="text-[.8rem] leading-[1.2rem] font-semibold">Bệnh viện Phương Đông mang
+                                        đến cho tôi
+                                        cảm
+                                        giác
+                                        vô cùng bình yên và an tâm khi thăm khám
+                                        tại đây!</h3>
+                                    <p class="text-[#454545] text-[.7rem] leading-[.95rem] font-normal">Lorem ipsum
+                                        dolor sit amet,
+                                        consectetur
+                                        adipiscing elit. Velit nulla etiam sed consequat
+                                        dictumst viverra molestie tortor feugiat. Purus consequat, sapien diam nec.
+                                        Egestas
+                                        lacinia scelerisque ultrices vivamus adipiscing diam massa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="rounded-b-[15px] bg-[#fff] rounded-t-2xl shadow-md">
+                                <div class="card_background_img"></div>
+                                <div class="card_profile_img"></div>
+                                <div class="pb-[.8rem]">
+                                    <p class="text-[.925rem] leading-[1.75rem] font-bold">Nguyễn Minh Ánh</p>
+                                    <div class="flex items-center text-[#FFB800] m-auto justify-center text-[9px]">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="px-[1.95rem] pb-[1.2rem]">
+                                    <h3 class="text-[.8rem] leading-[1.2rem] font-semibold">Bệnh viện Phương Đông mang
+                                        đến cho tôi
+                                        cảm
+                                        giác
+                                        vô cùng bình yên và an tâm khi thăm khám
+                                        tại đây!</h3>
+                                    <p class="text-[#454545] text-[.7rem] leading-[.95rem] font-normal">Lorem ipsum
+                                        dolor sit amet,
+                                        consectetur
+                                        adipiscing elit. Velit nulla etiam sed consequat
+                                        dictumst viverra molestie tortor feugiat. Purus consequat, sapien diam nec.
+                                        Egestas
+                                        lacinia scelerisque ultrices vivamus adipiscing diam massa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="rounded-b-[15px] bg-[#fff] rounded-t-2xl shadow-md">
+                                <div class="card_background_img"></div>
+                                <div class="card_profile_img"></div>
+                                <div class="pb-[.8rem]">
+                                    <p class="text-[.925rem] leading-[1.75rem] font-bold">Nguyễn Minh Ánh</p>
+                                    <div class="flex items-center text-[#FFB800] m-auto justify-center text-[9px]">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="px-[1.95rem] pb-[1.2rem]">
+                                    <h3 class="text-[.8rem] leading-[1.2rem] font-semibold">Bệnh viện Phương Đông mang
+                                        đến cho tôi
+                                        cảm
+                                        giác
+                                        vô cùng bình yên và an tâm khi thăm khám
+                                        tại đây!</h3>
+                                    <p class="text-[#454545] text-[.7rem] leading-[.95rem] font-normal">Lorem ipsum
+                                        dolor sit amet,
+                                        consectetur
+                                        adipiscing elit. Velit nulla etiam sed consequat
+                                        dictumst viverra molestie tortor feugiat. Purus consequat, sapien diam nec.
+                                        Egestas
+                                        lacinia scelerisque ultrices vivamus adipiscing diam massa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="./img/Union.png" alt="" class="absolute top-[-6%] right-[4.1%]">
+                <img src="./img/Vec-1.png" alt="" class="absolute top-[6.4%] left-[51.2%] w-[4.4%]">
+            </div>
+            <img src="./img/banner-dich-vu.png" alt=""
+                class="absolute top-0 left-0 z-[-1] w-full h-full lg:w-[49.8%] lg:h-[87%]">
+        </div>
+        <div class="layout-container pb-[40px] avg-img">
+            <div class="lg:flex">
+                <div class="w-full lg:w-1/2">
+                    <h3 class="text-[32px] leading-[45.6px] font-bold pb-6 text-center">Những câu hỏi thường gặp</h3>
+                    <div id="menu-container">
+                        <ul class="list accordion">
+                            <li id="nav1" class="toggle accordion-toggle">
+                                <span class="icon-plus"></span>
+                                <a class="link">Cách phân biệt giữa cảm cúm thông thường và covid-19?</a>
+                            </li>
+                            <ul class="menu-submenu accordion-content">
+                                <li><a class="head">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                        et, ipsam voluptatem quaerat quam illum perspiciatis ea ipsa atque nisi
+                                        similique. Aliquid dolore, culpa excepturi molestias eligendi mollitia
+                                        recusandae veritatis?</a></li>
+                            </ul>
+                            <li id="nav1" class="toggle accordion-toggle">
+                                <span class="icon-plus"></span>
+                                <a class="link">Cách phân biệt giữa cảm cúm thông thường và covid-19?</a>
+                            </li>
+                            <ul class="menu-submenu accordion-content">
+                                <li><a class="head">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                        et, ipsam voluptatem quaerat quam illum perspiciatis ea ipsa atque nisi
+                                        similique. Aliquid dolore, culpa excepturi molestias eligendi mollitia
+                                        recusandae veritatis?</a></li>
+                            </ul>
+                            <li id="nav1" class="toggle accordion-toggle">
+                                <span class="icon-plus"></span>
+                                <a class="link">Cách phân biệt giữa cảm cúm thông thường và covid-19?</a>
+                            </li>
+                            <ul class="menu-submenu accordion-content">
+                                <li><a class="head">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                        et, ipsam voluptatem quaerat quam illum perspiciatis ea ipsa atque nisi
+                                        similique. Aliquid dolore, culpa excepturi molestias eligendi mollitia
+                                        recusandae veritatis?</a></li>
+                            </ul>
+                            <li id="nav1" class="toggle accordion-toggle">
+                                <span class="icon-plus"></span>
+                                <a class="link">Cách phân biệt giữa cảm cúm thông thường và covid-19?</a>
+                            </li>
+                            <ul class="menu-submenu accordion-content">
+                                <li><a class="head">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                        et, ipsam voluptatem quaerat quam illum perspiciatis ea ipsa atque nisi
+                                        similique. Aliquid dolore, culpa excepturi molestias eligendi mollitia
+                                        recusandae veritatis?</a></li>
+                            </ul>
+                            <li id="nav1" class="toggle accordion-toggle">
+                                <span class="icon-plus"></span>
+                                <a class="link">Cách phân biệt giữa cảm cúm thông thường và covid-19?</a>
+                            </li>
+                            <ul class="menu-submenu accordion-content">
+                                <li><a class="head">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                        et, ipsam voluptatem quaerat quam illum perspiciatis ea ipsa atque nisi
+                                        similique. Aliquid dolore, culpa excepturi molestias eligendi mollitia
+                                        recusandae veritatis?</a></li>
+                            </ul>
+                            <li id="nav1" class="toggle accordion-toggle">
+                                <span class="icon-plus"></span>
+                                <a class="link">Cách phân biệt giữa cảm cúm thông thường và covid-19?</a>
+                            </li>
+                            <ul class="menu-submenu accordion-content">
+                                <li><a class="head">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                        et, ipsam voluptatem quaerat quam illum perspiciatis ea ipsa atque nisi
+                                        similique. Aliquid dolore, culpa excepturi molestias eligendi mollitia
+                                        recusandae veritatis?</a></li>
+                            </ul>
+                            <li id="nav1" class="toggle accordion-toggle">
+                                <span class="icon-plus"></span>
+                                <a class="link">Cách phân biệt giữa cảm cúm thông thường và covid-19?</a>
+                            </li>
+                            <ul class="menu-submenu accordion-content">
+                                <li><a class="head">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                        et, ipsam voluptatem quaerat quam illum perspiciatis ea ipsa atque nisi
+                                        similique. Aliquid dolore, culpa excepturi molestias eligendi mollitia
+                                        recusandae veritatis?</a></li>
+                            </ul>
+                            <li id="nav1" class="toggle accordion-toggle">
+                                <span class="icon-plus"></span>
+                                <a class="link">Cách phân biệt giữa cảm cúm thông thường và covid-19?</a>
+                            </li>
+                            <ul class="menu-submenu accordion-content">
+                                <li><a class="head">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                        et, ipsam voluptatem quaerat quam illum perspiciatis ea ipsa atque nisi
+                                        similique. Aliquid dolore, culpa excepturi molestias eligendi mollitia
+                                        recusandae veritatis?</a></li>
+                            </ul>
+
+                        </ul>
+                        <!-- list accordion-->
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <h3 class="text-[1.6rem] lg:text-[2rem] leading-[2.85rem] pb-6 text-center font-bold">Bảng giá dịch
+                        vụ gói Ortho-K
+                    </h3>
+                    <div class="tabs pb-6">
+                        <button class="tablinks text-sm lg:text-[0.925rem] font-semibold text-[#8888] active"
+                            data-electronic="ORTHOK-01">ORTHO K - 01</button>
+                        <button class="tablinks text-sm lg:text-[0.925rem] font-semibold text-[#8888]"
+                            data-electronic="ORTHOK-02">ORTHO K
+                            - 02</button>
+                        <button class="tablinks text-sm lg:text-[0.925rem] font-semibold text-[#8888]"
+                            data-electronic="ORTHOK-03">ORTHO K
+                            - 03</button>
+                        <button class="tablinks text-sm lg:text-[0.925rem] font-semibold text-[#8888]"
+                            data-electronic="ORTHOK-04">ORTHO K
+                            - 04</button>
+                        <button class="tablinks text-sm lg:text-[0.925rem] font-semibold text-[#8888]"
+                            data-electronic="ORTHOK-05">ORTHO K
+                            - 05</button>
+                    </div>
+
+                    <!-- Tab content -->
+                    <div class="wrapper_tabcontent">
+                        <div id="ORTHOK-01" class="tabcontent active">
+                            <div class="swiper tabsSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide w-full">
+                                        <div class="content-bor">
+                                            <div class="flex items-center justify-evenly round-title">
+                                                <div class="w-[20%]">
+                                                    <img src="./img/Untitled-1.png" alt="">
+                                                </div>
+                                                <div>
+                                                    <h3 class="text-base lg:text-4xl text-[#1d7daf] font-bold">Gói ORTHO
+                                                        K - 01
+                                                    </h3>
+                                                    <p>(2 mắt dưới 5 diop)</p>
+                                                </div>
+                                            </div>
+                                            <div class="px-[15px]">
+                                                <table>
+                                                    <thead
+                                                        class="text-xs lg:text-base text-[#ffff] bg-[#077fc2] font-medium">
+                                                        <tr>
+                                                            <th class="text-center">STT</th>
+                                                            <th class="text-center">Danh mục khám</th>
+                                                            <th class="text-center">Mục đích</th>
+                                                            <th class="text-center">Giá niêm yết
+                                                                (ĐVT: VNĐ)</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="scrollBox text-xs lg:text-base" style="width:100%;">
+                                                        <tr>
+                                                            <td class="text-center">1</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">2</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">3</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">4</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">5</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">6</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">7</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">8</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="3" class="text-center">TỔNG CỘNG</td>
+                                                            <td>22.500.000</td>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div
+                                                class="text-sm lg:text-base bg-[#077fc2] flex items-center px-2 lg:px-0 py-3 !text-[#fff] foot-table justify-evenly rounded-b-3xl">
+                                                <div class="flex items-center">
+                                                    <i class="fa-sharp fa-solid fa-phone"></i>
+                                                    <a href="#!" class="ml-[6px] text-[#fff]">Hotline: 1900 1806</a>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <i class="fa-solid fa-globe"></i>
+                                                    <a href="#!" class="text-[#fff] ml-[6px]">https://benhvienphuong
+                                                        dong.vn/</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-full">
+                                        <div class="content-bor">
+                                            <div class="flex items-center justify-evenly round-title">
+                                                <div class="w-[20%]">
+                                                    <img src="./img/Untitled-1.png" alt="">
+                                                </div>
+                                                <div>
+                                                    <h3 class="text-base lg:text-4xl text-[#1d7daf] font-bold">Gói ORTHO
+                                                        K - 01
+                                                    </h3>
+                                                    <p>(2 mắt dưới 5 diop)</p>
+                                                </div>
+                                            </div>
+                                            <div class="px-[15px]">
+                                                <table>
+                                                    <thead
+                                                        class="text-xs lg:text-base text-[#ffff] bg-[#077fc2] font-medium">
+                                                        <tr>
+                                                            <th class="text-center">STT</th>
+                                                            <th class="text-center">Danh mục khám</th>
+                                                            <th class="text-center">Mục đích</th>
+                                                            <th class="text-center">Giá niêm yết
+                                                                (ĐVT: VNĐ)</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="scrollBox text-xs lg:text-base" style="width:100%;">
+                                                        <tr>
+                                                            <td class="text-center">1</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">2</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">3</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">4</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">5</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">6</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">7</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">8</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="3" class="text-center">TỔNG CỘNG</td>
+                                                            <td>22.500.000</td>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div
+                                                class="text-sm lg:text-base bg-[#077fc2] flex items-center px-2 lg:px-0 py-3 !text-[#fff] foot-table justify-evenly rounded-b-3xl">
+                                                <div class="flex items-center">
+                                                    <i class="fa-sharp fa-solid fa-phone"></i>
+                                                    <a href="#!" class="ml-[6px] text-[#fff]">Hotline: 1900 1806</a>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <i class="fa-solid fa-globe"></i>
+                                                    <a href="#!" class="text-[#fff]" ml-[6px]>https://benhvienphuong
+                                                        dong.vn/</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-full">
+                                        <div class="content-bor">
+                                            <div class="flex items-center justify-evenly round-title">
+                                                <div class="w-[20%]">
+                                                    <img src="./img/Untitled-1.png" alt="">
+                                                </div>
+                                                <div>
+                                                    <h3 class="text-base lg:text-4xl text-[#1d7daf] font-bold">Gói ORTHO
+                                                        K - 01
+                                                    </h3>
+                                                    <p>(2 mắt dưới 5 diop)</p>
+                                                </div>
+                                            </div>
+                                            <div class="px-[15px]">
+                                                <table>
+                                                    <thead
+                                                        class="text-xs lg:text-base text-[#ffff] bg-[#077fc2] font-medium">
+                                                        <tr>
+                                                            <th class="text-center">STT</th>
+                                                            <th class="text-center">Danh mục khám</th>
+                                                            <th class="text-center">Mục đích</th>
+                                                            <th class="text-center">Giá niêm yết
+                                                                (ĐVT: VNĐ)</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="scrollBox text-xs lg:text-base" style="width:100%;">
+                                                        <tr>
+                                                            <td class="text-center">1</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">2</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">3</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">4</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">5</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">6</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">7</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">8</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="3" class="text-center">TỔNG CỘNG</td>
+                                                            <td>22.500.000</td>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div
+                                                class="text-sm lg:text-base bg-[#077fc2] flex items-center px-2 lg:px-0 py-3 !text-[#fff] foot-table justify-evenly rounded-b-3xl">
+                                                <div class="flex items-center">
+                                                    <i class="fa-sharp fa-solid fa-phone"></i>
+                                                    <a href="#!" class="ml-[6px] text-[#fff]">Hotline: 1900 1806</a>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <i class="fa-solid fa-globe"></i>
+                                                    <a href="#!" class="text-[#fff]" ml-[6px]>https://benhvienphuong
+                                                        dong.vn/</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div id="ORTHOK-02" class="tabcontent">
+                            <div class="swiper tabsSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide w-full">
+                                        <div class="content-bor">
+                                            <div class="flex items-center justify-evenly round-title">
+                                                <div class="w-[20%]">
+                                                    <img src="./img/Untitled-1.png" alt="">
+                                                </div>
+                                                <div>
+                                                    <h3 class="text-base lg:text-4xl text-[#1d7daf] font-bold">Gói ORTHO
+                                                        K - 01
+                                                    </h3>
+                                                    <p>(2 mắt dưới 5 diop)</p>
+                                                </div>
+                                            </div>
+                                            <div class="px-[15px]">
+                                                <table>
+                                                    <thead
+                                                        class="text-xs lg:text-base text-[#ffff] bg-[#077fc2] font-medium">
+                                                        <tr>
+                                                            <th class="text-center">STT</th>
+                                                            <th class="text-center">Danh mục khám</th>
+                                                            <th class="text-center">Mục đích</th>
+                                                            <th class="text-center">Giá niêm yết
+                                                                (ĐVT: VNĐ)</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="scrollBox text-xs lg:text-base" style="width:100%;">
+                                                        <tr>
+                                                            <td class="text-center">1</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">2</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">3</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">4</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">5</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">6</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">7</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">8</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="3" class="text-center">TỔNG CỘNG</td>
+                                                            <td>22.500.000</td>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div
+                                                class="text-sm lg:text-base bg-[#077fc2] flex items-center px-2 lg:px-0 py-3 !text-[#fff] foot-table justify-evenly rounded-b-3xl">
+                                                <div class="flex items-center">
+                                                    <i class="fa-sharp fa-solid fa-phone"></i>
+                                                    <a href="#!" class="ml-[6px] text-[#fff]">Hotline: 1900 1806</a>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <i class="fa-solid fa-globe"></i>
+                                                    <a href="#!" class="text-[#fff]" ml-[6px]>https://benhvienphuong
+                                                        dong.vn/</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-full">
+                                        <div class="content-bor">
+                                            <div class="flex items-center justify-evenly round-title">
+                                                <div class="w-[20%]">
+                                                    <img src="./img/Untitled-1.png" alt="">
+                                                </div>
+                                                <div>
+                                                    <h3 class="text-base lg:text-4xl text-[#1d7daf] font-bold">Gói ORTHO
+                                                        K - 01
+                                                    </h3>
+                                                    <p>(2 mắt dưới 5 diop)</p>
+                                                </div>
+                                            </div>
+                                            <div class="px-[15px]">
+                                                <table>
+                                                    <thead
+                                                        class="text-xs lg:text-base text-[#ffff] bg-[#077fc2] font-medium">
+                                                        <tr>
+                                                            <th class="text-center">STT</th>
+                                                            <th class="text-center">Danh mục khám</th>
+                                                            <th class="text-center">Mục đích</th>
+                                                            <th class="text-center">Giá niêm yết
+                                                                (ĐVT: VNĐ)</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="scrollBox text-xs lg:text-base" style="width:100%;">
+                                                        <tr>
+                                                            <td class="text-center">1</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">2</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">3</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">4</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">5</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">6</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">7</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">8</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="3" class="text-center">TỔNG CỘNG</td>
+                                                            <td>22.500.000</td>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div
+                                                class="text-sm lg:text-base bg-[#077fc2] flex items-center px-2 lg:px-0 py-3 !text-[#fff] foot-table justify-evenly rounded-b-3xl">
+                                                <div class="flex items-center">
+                                                    <i class="fa-sharp fa-solid fa-phone"></i>
+                                                    <a href="#!" class="ml-[6px] text-[#fff]">Hotline: 1900 1806</a>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <i class="fa-solid fa-globe"></i>
+                                                    <a href="#!" class="text-[#fff]" ml-[6px]>https://benhvienphuong
+                                                        dong.vn/</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-full">
+                                        <div class="content-bor">
+                                            <div class="flex items-center justify-evenly round-title">
+                                                <div class="w-[20%]">
+                                                    <img src="./img/Untitled-1.png" alt="">
+                                                </div>
+                                                <div>
+                                                    <h3 class="text-base lg:text-4xl text-[#1d7daf] font-bold">Gói ORTHO
+                                                        K - 01
+                                                    </h3>
+                                                    <p>(2 mắt dưới 5 diop)</p>
+                                                </div>
+                                            </div>
+                                            <div class="px-[15px]">
+                                                <table>
+                                                    <thead
+                                                        class="text-xs lg:text-base text-[#ffff] bg-[#077fc2] font-medium">
+                                                        <tr>
+                                                            <th class="text-center">STT</th>
+                                                            <th class="text-center">Danh mục khám</th>
+                                                            <th class="text-center">Mục đích</th>
+                                                            <th class="text-center">Giá niêm yết
+                                                                (ĐVT: VNĐ)</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="scrollBox text-xs lg:text-base" style="width:100%;">
+                                                        <tr>
+                                                            <td class="text-center">1</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">2</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">3</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">4</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">5</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">6</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">7</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">8</td>
+                                                            <td>01 lần khám và tư vấn với bác sĩ chuyên khoa mắt
+                                                            </td>
+                                                            <td>khám và nhận tư vấn từ bác sĩ chuyên khoa mắt</td>
+                                                            <td class="text-center">x</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="3" class="text-center">TỔNG CỘNG</td>
+                                                            <td>22.500.000</td>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div
+                                                class="text-sm lg:text-base bg-[#077fc2] flex items-center px-2 lg:px-0 py-3 !text-[#fff] foot-table justify-evenly rounded-b-3xl">
+                                                <div class="flex items-center">
+                                                    <i class="fa-sharp fa-solid fa-phone"></i>
+                                                    <a href="#!" class="ml-[6px] text-[#fff]">Hotline: 1900 1806</a>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <i class="fa-solid fa-globe"></i>
+                                                    <a href="#!" class="text-[#fff]" ml-[6px]>https://benhvienphuong
+                                                        dong.vn/</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div id="ORTHOK-03" class="tabcontent">
+                            <h1>Chưa có thông tin</h1>
+                        </div>
+                        <div id="ORTHOK-04" class="tabcontent">
+                            <h1>Chưa có thông tin</h1>
+                        </div>
+                        <div id="ORTHOK-05" class="tabcontent">
+                            <h1>Chưa có thông tin</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./img/circel.png" alt="" class="absolute top-0 right-0 w-12 h-12 z-[-1]">
+        </div>
+        <div class="bg-cover bg-bg-contact bg-no-repeat w-full py-[75px]">
+            <div class="layout-container">
+                <div class="bg-bg-gradiant text-center max-w-[688px] text-[#ffff] pt-[24px] pb-[16px] rounded-t-[16px]">
+                    <h3 class="text-base lg:text-3xl font-bold pb-2">Đăng ký tư vấn miễn phí</h3>
+                    <p class="text-sm lg:text-base font-medium">Đặt hẹn ngay để nhận tư vấn và chúng tôi sẽ xếp lịch
+                        khám kịp thời!
+                    </p>
+                </div>
+                <div class="max-w-[688px] bg-[#fff] rounded-b-[16px] p-8 pb-2">
+                    <div class="-mx-3 md:flex mb-6">
+                        <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                            <input class="block w-full py-[14px] px-[16px] border border-[#EBEBEB] rounded-lg mb-4"
+                                type="text" placeholder="Họ và tên*">
+                            <input class="block w-full py-[14px] px-[16px] border border-[#EBEBEB] rounded-lg mb-4"
+                                type="text" placeholder="E-mail">
+                            <input class="block w-full py-[14px] px-[16px] border border-[#EBEBEB] rounded-lg mb-4"
+                                type="text" placeholder="Số điện thoại*">
+                            <input class="block w-full py-[14px] px-[16px] border border-[#EBEBEB] rounded-lg"
+                                type="date" placeholder="Ngày đặt">
+                        </div>
+                        <div class="md:w-1/2 px-3">
+                            <textarea class="p-[15px] block w-full mb-[30px] border border-[#EBEBEB] rounded-lg" name=""
+                                id="" cols="6" rows="6" type="text" placeholder="Nhập nội dung"></textarea>
+                            <div class="flex items-center">
+                                <input type="checkbox">
+                                <p class="text-base font-normal ml-2">Tôi không phải người máy</p>
+                            </div>
+                            <button class="w-full block bg-bg-gradiant py-[10px] rounded-[40px] text-[#fff] mt-[30px]">
+                                GỬI YÊU CẦU
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-bg-gradiant">
+            <div class="pt-[30px] lg:pt-[117px] pb-8">
+                <div class="layout-container">
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-x-[30px] md:gap-y-3 xl:gap-y-0 text-[#fff]">
+                        <div>
+                            <a href="#!">
+                                <img src="./img/Logo-foot.png" alt="">
+                            </a>
+                            <h3 class="font-medium text-base pt-6 pb-2 uppercase">Bệnh viên đa khoa phương đông</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna sit morbi nisl contale
+                                consectetur
+                                pellentesque ullamcorper con viverra id cursus hendreritenim ultricies</p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-medium py-2 md:pt-0 md:pb-6">Thông tin liên hệ</h3>
+                            <p class="pb-3">Địa chỉ: Số 9, Phố Viên, Cổ Nhuế 2, Bắc Từ Liêm, Hà Nội</p>
+                            <p class="pb-3"><a href="#!">
+                                    bvphuongdong@phuongdonghospital.vn
+                                </a></p>
+                            <p class="pb-3"><a href="#!">info.benhvienphuongdong@gmail.com</a></p>
+                            <p>Tổng đài tư vấn: <a href="#!">19001806</a></p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-medium py-2 md:pt-0 md:pb-6">Giờ làm việc</h3>
+                            <p class="pb-3">Từ 7:00 - 19:00 từ Thứ 2 đến CN</p>
+                            <p class="pb-3">Cấp cứu 24/7: <a href="0833015115">0833 015 115</a></p>
+                            <p class="pb-3">Hotline Tiêm chủng: <a href="0911615115">0911 615 115</a></p>
+                            <p>Hotline Hỗ trợ khách hàng: <a href="19001806">1900 1806</a></p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-medium py-2 md:pt-0 md:pb-0">Theo dõi chúng tôi</h3>
+                            <span class="flex py-2 md:py-6 gap-x-4 md:gap-x-6 ">
+                                <a href="#!">
+                                    <img src="./img/social-fb.svg" alt="">
+                                </a>
+                                <a href="#!">
+                                    <img src="./img/social-youtube.svg" alt="">
+                                </a>
+                                <a href="#!">
+                                    <img src="./img/social-tiktok.svg" alt="">
+                                </a>
+                            </span>
+                            <img src="./img/bo-cong-thuong.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+
+    </script>
+    <script src="./js/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+   
+</body>
+
+</html>
